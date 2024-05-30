@@ -52,32 +52,32 @@ target_link_libraries(HelloSFML sfml-system sfml-window sfml-graphics sfml-netwo
 # Kopiowanie plików czcionki, dźwięków i tekstowych do katalogu bin
 add_custom_command(TARGET HelloSFML POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy
-        /Users/kamiljakut/Desktop/Studia/PK4/2048_v2/ClearSans-Regular.ttf
+        ../ClearSans-Regular.ttf
         $<TARGET_FILE_DIR:HelloSFML>/arial.ttf)
 
 add_custom_command(TARGET HelloSFML POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy
-        /Users/kamiljakut/Desktop/Studia/PK4/2048_v2/background.ogg
+        ../background.ogg
         $<TARGET_FILE_DIR:HelloSFML>/background.ogg)
 
 add_custom_command(TARGET HelloSFML POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy
-        /Users/kamiljakut/Desktop/Studia/PK4/2048_v2/tablicaLatwy.txt
+        ../tablicaLatwy.txt
         $<TARGET_FILE_DIR:HelloSFML>/tablicaLatwy.txt)
 
 add_custom_command(TARGET HelloSFML POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy
-        /Users/kamiljakut/Desktop/Studia/PK4/2048_v2/tablicaNormalny.txt
+        ../tablicaNormalny.txt
         $<TARGET_FILE_DIR:HelloSFML>/tablicaNormalny.txt)
 
 add_custom_command(TARGET HelloSFML POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy
-        /Users/kamiljakut/Desktop/Studia/PK4/2048_v2/tablicaTrudny.txt
+        ../tablicaTrudny.txt
         $<TARGET_FILE_DIR:HelloSFML>/tablicaTrudny.txt)
 
 add_custom_command(TARGET HelloSFML POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy
-        /Users/kamiljakut/Desktop/Studia/PK4/2048_v2/logowanie.txt
+        ../logowanie.txt
         $<TARGET_FILE_DIR:HelloSFML>/logowanie.txt)
 
 # Dodanie katalogów z bibliotekami, jeśli są w niestandardowej lokalizacji
